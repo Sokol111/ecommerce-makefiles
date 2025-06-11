@@ -64,3 +64,8 @@ js-build:
 	cat $(JS_CLIENT_DIR)/package.json
 
 js: js-generate js-package js-tsconfig js-build
+
+clean:
+	echo "Cleaning generated files..."
+	rm -rf $(GEN_DIR)
+	rm -rf $(JS_CLIENT_DIR)
